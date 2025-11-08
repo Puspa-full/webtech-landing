@@ -526,6 +526,34 @@ nav a:hover::after {
 }
 
 .video-overlay:hover {
-  transform: translate(-50%, -50%);
-  scale: calc(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-overlay .play-icon {
+  border-left: 20px solid #5d5fef;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+}
+
+.about-text {
+  padding: 20px 0;
+}
+
+.section-label {
+  color: #5d5fef;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-label::before {
+  content: '';
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #5d5fef 0%, transparent 100%);
 }
